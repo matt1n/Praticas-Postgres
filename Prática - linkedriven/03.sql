@@ -1,0 +1,1 @@
+SELECT users.id, users.name, courses.name, schools.name, educations."endDate" FROM educations JOIN courses ON educations."courseId" = courses.id JOIN users ON educations."userId" = users.id JOIN schools ON educations."schoolId" = schools.id WHERE status = 'finished' AND "userId" = 30;
